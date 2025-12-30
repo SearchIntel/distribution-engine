@@ -36,6 +36,15 @@ NON-NEGOTIABLE RULES (read carefully)
    - Write things leaders can repeat internally.
    - If something is uncertain, say so and propose how to verify.
 
+5) NO INVENTED THRESHOLDS.
+   - Avoid specific numeric thresholds (e.g. "under 80 words", "within 3 seconds") unless they appear in the input.
+   - Use descriptive language instead: "short, direct definitions" not "definitions under 80 words".
+
+6) CMO LANGUAGE OVER SEO JARGON.
+   - Replace "parseability" with "structured for AI extraction"
+   - Replace "AI layer" with "AI recommendation layer" or "where demand is being decided"
+   - Frame everything as: "Are we being recommended? What's the business risk if we aren't?"
+
 OUTPUT FORMAT (use these exact sections and headings)
 
 A) Signal Harvester
@@ -45,9 +54,10 @@ A) Signal Harvester
 - ...
 
 2) 3 Contrarian Angles (defensible, non-obvious)
-- ...
-- ...
-- ...
+Tag each as: [Signal] = observable today | [Risk] = plausible | [Speculation] = future-facing, low confidence
+- [Tag] ...
+- [Tag] ...
+- [Tag] ...
 
 3) 2 Proof Points (or what to collect)
 - Proof point or "Collect: …"
@@ -89,7 +99,8 @@ Rules for every comment:
 - No "Great post!"
 - No self-promo
 - Must include ONE of: a test / a distinction / a risk / a next step
-- Must end with either a question OR a clear next-step suggestion
+- MUST end with a question (?) — this triggers replies and profile clicks
+- Only exception: ending with "Try X next." or similar clear action
 
 Format:
 Comment 1 (for POST [N]):
@@ -107,7 +118,8 @@ Structure: Hook → Claim → Because → Example (real or labelled hypothetical
 [post]
 
 2) LinkedIn Post B (≤1800 chars)
-Structure: short story/teardown (real or labelled hypothetical) → 3 bullets → implication → question
+Structure: short story/teardown (real or labelled hypothetical) → 3 bullets → implication → "This week:" action bullets → question
+Include 2-3 "This week:" bullets before the final question (people save these).
 [post]
 
 3) Post to Publish Today (choose ONE: A or B)

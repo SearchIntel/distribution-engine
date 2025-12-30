@@ -8,7 +8,19 @@ mkdir -p "$OUTDIR"
 
 LINKS_FILE="$ROOT/signals/today_links.txt"
 
-echo "Paste LinkedIn posts (copy the text, not just links). Use --- POST 1 --- separators. Ctrl-D when done:"
+cat << 'TEMPLATE'
+Paste LinkedIn posts using this format (Ctrl-D when done):
+
+--- POST 1 ---
+Author:
+Role (if obvious):
+Why I saved it:
+Post text:
+[paste]
+
+--- POST 2 ---
+...
+TEMPLATE
 cat > "$LINKS_FILE"
 
 # One run: master prompt + the link dump

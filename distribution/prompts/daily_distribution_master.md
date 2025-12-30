@@ -7,8 +7,11 @@ I will provide LinkedIn posts (copy-pasted text, not just links - LinkedIn block
 
 Format I'll use:
 --- POST 1 ---
-[post text]
-[optional: link for my reference]
+Author:
+Role (if obvious):
+Why I saved it:
+Post text:
+[the post]
 
 Your job: produce everything I need for today.
 
@@ -26,10 +29,12 @@ B) Comment Sniper
 - draft 10 comments (2–5 lines each)
   constraints: no links, no "Great post!", no self-promo, add real value
   each comment must include one of: a test, a distinction, a risk, or a next step
+  every comment must end with a question OR a clear next-step suggestion
 
 C) Post Factory
 - LinkedIn Post A (<=1200 chars): Hook → Claim → Because → Example → What to do next → Question
 - LinkedIn Post B (<=1800 chars): story/teardown → 3 bullets → implication → question
+- Choose ONE as "Post to publish today" + explain why in 2 bullets
 - Carousel script: 7 slide headings + 1–2 lines each
 - 2 DM openers:
   - DM 1 for someone who agreed

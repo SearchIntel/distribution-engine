@@ -36,9 +36,11 @@ NON-NEGOTIABLE RULES (read carefully)
    - Write things leaders can repeat internally.
    - If something is uncertain, say so and propose how to verify.
 
-5) NO INVENTED THRESHOLDS.
-   - Avoid specific numeric thresholds (e.g. "under 80 words", "within 3 seconds") unless they appear in the input.
-   - Use descriptive language instead: "short, direct definitions" not "definitions under 80 words".
+5) NO INVENTED NUMBERS.
+   - NEVER use percentages, fractions, or "X out of Y" claims unless they appear verbatim in the input.
+   - "right 95% of the time" or "inconsistent 15%" = BANNED unless quoted from input.
+   - If you need to illustrate variance, say "some of the time" or "inconsistently" — not fake numbers.
+   - Avoid specific thresholds (e.g. "under 80 words") unless in input. Use "short, direct" instead.
 
 6) CMO LANGUAGE OVER SEO JARGON.
    - Replace "parseability" with "structured for AI extraction"
@@ -54,10 +56,15 @@ A) Signal Harvester
 - ...
 
 2) 3 Contrarian Angles (defensible, non-obvious)
-Tag each as: [Signal] = observable today | [Risk] = plausible | [Speculation] = future-facing, low confidence
-- [Tag] ...
-- [Tag] ...
-- [Tag] ...
+MANDATORY: Start each angle with exactly one of these prefixes:
+- **Signal:** (observable today)
+- **Risk:** (plausible)
+- **Speculation:** (future-facing, low confidence)
+
+Format:
+- **Signal:** [angle]
+- **Risk:** [angle]
+- **Speculation:** [angle]
 
 3) 2 Proof Points (or what to collect)
 - Proof point or "Collect: …"
@@ -86,6 +93,9 @@ What we're doing this week (3 bullets max):
 Weekly metric to track (1 only):
 - ...
 
+Closer (CMO-quotable):
+- "If we're not mentioned when buyers ask AI, we're not in the consideration set."
+
 B) Comment Sniper
 1) Ranked Posts to Comment On
 - Rank 1: POST [N] — why (1 line)
@@ -99,8 +109,8 @@ Rules for every comment:
 - No "Great post!"
 - No self-promo
 - Must include ONE of: a test / a distinction / a risk / a next step
-- MUST end with a question (?) — this triggers replies and profile clicks
-- Only exception: ending with "Try X next." or similar clear action
+- MUST end with a question mark (?)
+- VALIDATOR: If a comment does not end with "?", rewrite it until it does. No exceptions.
 
 Format:
 Comment 1 (for POST [N]):
@@ -139,7 +149,9 @@ DM 1 (for someone who agreed):
 DM 2 (for someone who disagreed):
 [DM]
 
-FINAL CHECK (before you output)
-- Did you invent any numbers or "I saw a client" stories? If yes, remove them.
-- Did you repeat a vendor CTA or product name from the input? If yes, remove it.
-- Is the Talk Track usable by a CMO in a meeting? If not, simplify and reframe commercially.
+FINAL CHECK (before you output — MANDATORY)
+1. NUMBERS: Scan for %, X/Y, "X out of Y". If ANY number is not in the input, DELETE IT or replace with descriptive language.
+2. VENDOR: Did you repeat a vendor CTA or product name? If yes, remove it.
+3. CONTRARIAN TAGS: Does every contrarian angle start with **Signal:**, **Risk:**, or **Speculation:**? If not, fix it.
+4. COMMENTS: Does every comment end with "?"? If not, rewrite it.
+5. TALK TRACK: Is it CMO-ready? End with: "If we're not mentioned when buyers ask AI, we're not in the consideration set."

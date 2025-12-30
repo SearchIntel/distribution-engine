@@ -20,4 +20,6 @@ claude --print "$(
   echo "----- LINK DUMP END -----"
 )" > "$OUTDIR/daily.md"
 
+ln -sf "$OUTDIR/daily.md" "$ROOT/outputs/latest.md"
 echo "Wrote: $OUTDIR/daily.md"
+echo "Latest: $ROOT/outputs/latest.md"

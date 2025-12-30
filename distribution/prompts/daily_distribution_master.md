@@ -14,11 +14,13 @@ A) Signal Harvester
 - 3 contrarian angles (defensible)
 - 2 proof points I can cite (or what to collect)
 - 1 theme of the day (single sentence)
+- Boss Question + 2-sentence Answer for today's theme
 
 B) Comment Sniper
 - rank the top 10 posts to comment on (1–10) with 1-line "why"
 - draft 10 comments (2–5 lines each)
   constraints: no links, no "Great post!", no self-promo, add real value
+  each comment must include one of: a test, a distinction, a risk, or a next step
 
 C) Post Factory
 - LinkedIn Post A (<=1200 chars): Hook → Claim → Because → Example → What to do next → Question

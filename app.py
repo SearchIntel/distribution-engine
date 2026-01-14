@@ -1,5 +1,5 @@
 import streamlit as st
-import subprocess
+import anthropic
 import re
 from datetime import date
 from pathlib import Path
@@ -22,25 +22,25 @@ MASTER_PROMPT = PROMPTS_DIR / "daily_distribution_master.md"
 def load_master_prompt():
     return MASTER_PROMPT.read_text()
 
-# Generate output using Claude CLI
+# Generate output using Anthropic API
 def generate_output(posts_content: str) -> str:
     prompt = load_master_prompt()
     full_prompt = f"{prompt}\n\n----- POSTS START -----\n{posts_content}\n----- POSTS END -----"
 
     try:
-        result = subprocess.run(
-            ["claude", "--print", full_prompt],
-            capture_output=True,
-            text=True,
-            timeout=300
+        client = anthropic.Anthropic(api_key=st.secrets["ANTHROPIC_API_KEY"])
+        message = client.messages.create(
+            model="claude-sonnet-4-20250514",
+            max_tokens=8192,
+            messages=[
+                {"role": "user", "content": full_prompt}
+            ]
         )
-        if result.returncode != 0:
-            return f"Error: {result.stderr}"
-        return result.stdout
-    except subprocess.TimeoutExpired:
-        return "Error: Request timed out (5 min limit)"
-    except FileNotFoundError:
-        return "Error: Claude CLI not found. Make sure it's installed and in your PATH."
+        return message.content[0].text
+    except anthropic.APIError as e:
+        return f"Error: API error - {e}"
+    except Exception as e:
+        return f"Error: {e}"
 
 # Save output
 def save_output(content: str) -> Path:
